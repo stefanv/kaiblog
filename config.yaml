@@ -1,0 +1,80 @@
+baseURL: "https://kai-striega.github.io"
+languageCode: "en-us"
+title: "Kai's Blog"
+theme: scientific-python-hugo-theme
+relativeURLs: true
+disableKinds: ["RSS", "taxonomy"]
+ignoreErrors: ["error-disable-taxonomy"]
+
+outputFormats:
+  Atom:
+    mediaType: "application/atom"
+    baseName: "atom"
+    isPlainText: false
+
+mediaTypes:
+  application/atom:
+    suffixes:
+      - xml
+
+outputs:
+  home: ["HTML", "ATOM"]
+  term: ["HTML", "ATOM"]
+
+params:
+  description: "Kai's ponderings on all things"
+  # images:
+  #   - /images/logo.svg
+  # navbarlogo:
+  #   image: logo.svg
+  #   text: Scientific Python Blog
+  #   link: /
+
+  # navbarlogoshow: true
+
+  # navbar:
+  #   - title: Home
+  #     url: https://scientific-python.org
+  #   - title: Blog
+  #     url: /
+  #   - title: Learn
+  #     url: https://learn.scientific-python.org
+
+  # footer:
+  #   logo: logo.svg
+  #   socialmediatitle: ""
+  #   socialmedia:
+  #     - link: https://github.com/scientific-python/
+  #       icon: github
+  #     - link: https://www.youtube.com/c/ScientificPython-org
+  #       icon: youtube
+  #     - link: https://fosstodon.org/@scientific_python
+  #       icon: mastodon
+  #     - link: https://discuss.scientific-python.org
+  #       icon: discourse
+  #     - link: https://discord.com/invite/vur45CbwMz
+  #       icon: discord
+
+  #   quicklinks:
+  #     column1:
+  #       title: ""
+  #       links:
+  #         - text: About
+  #           link: /about/
+  #         - text: Roadmap
+  #           link: /about/roadmap/
+  #         - text: Code of Conduct
+  #           link: https://scientific-python.org/code_of_conduct/
+  #     column2:
+  #       title: "Maintainers"
+  #       links:
+  #         - text: SPECs
+  #           link: https://scientific-python.org/specs/
+  #         - text: Summits
+  #           link: https://scientific-python.org/summits/
+  #         - text: Calendars
+  #           link: https://scientific-python.org/calendars/
+  #     column3:
+  #       links:
+  #         - text: Press kit
+  #           link: https://scientific-python.org/press-kit/
